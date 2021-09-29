@@ -10,6 +10,16 @@ import com.panyukovnn.designpatterns.proxy.service.VideoServiceImpl;
  */
 public class Main {
 
+    /*
+        Паттерн proxy (заместитель) позволяет добавить новое поведение до и после выполнения методов сервиса
+        Таким образом, декорируются все методы.
+
+        Метод, использующий прокси сервис не замечает отличий от основного сервиса.
+
+        Широко используется спрингом.
+     */
+
+
     public static void main(String[] args) {
         test(new VideoServiceImpl());
         test(new VideoServiceCacheProxyImpl());
