@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'com.panyukovnn'
+version '1.0-SNAPSHOT'
+
+sourceSets.main.java.srcDirs = ['src/main/java']
+
+configurations {
+    compileOnly.extendsFrom annotationProcessor
+    testCompileOnly.extendsFrom annotaionProcessor
+    testAnnotationProcessor.extendsFrom annotaionProcessor
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    testImplementation 'junit:junit:4.12'
+}
+
+test {
+    useJUnit()
+}
