@@ -5,6 +5,8 @@ import com.panyukovnn.designpatterns.proxy.service.VideoService;
 import com.panyukovnn.designpatterns.proxy.service.VideoServiceCacheProxyImpl;
 import com.panyukovnn.designpatterns.proxy.service.VideoServiceImpl;
 
+import java.util.HashMap;
+
 /**
  * Паттерн proxy (заместитель) позволяет добавить новое поведение до и после выполнения методов сервиса
  * Таким образом, декорируются все методы.
