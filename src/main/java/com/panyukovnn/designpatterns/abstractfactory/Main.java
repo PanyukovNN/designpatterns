@@ -8,12 +8,11 @@ import com.panyukovnn.designpatterns.abstractfactory.model.OperationSystem;
 
 import java.util.Map;
 
+/**
+ * Данный паттерн представляет собой следующий уровень асбтракции над фабрикой
+ * Необоходим для создания разных видов объектов со схожими характеристиками
+ */
 public class Main {
-
-    /*
-        Данный паттерн представляет собой следующий уровень асбтракции над фабрикой
-        Необоходим для создания разных видов объектов со схожими характеристиками
-     */
 
     private final static Map<OperationSystem, AbstractFactory> osFactoryMap = new ImmutableMap.Builder<OperationSystem, AbstractFactory>()
             .put(OperationSystem.MAC, new MacFactory())
