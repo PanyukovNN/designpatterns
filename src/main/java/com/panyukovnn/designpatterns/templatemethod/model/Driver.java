@@ -1,4 +1,4 @@
-package com.panyukovnn.designpatterns.factorymethod.model;
+package com.panyukovnn.designpatterns.templatemethod.model;
 
 public interface Driver {
 

@@ -1,18 +1,12 @@
 package com.panyukovnn.designpatterns.factorymethod;
 
-import com.panyukovnn.designpatterns.factorymethod.service.ChromeDriverService;
-import com.panyukovnn.designpatterns.factorymethod.service.DriverService;
-import com.panyukovnn.designpatterns.factorymethod.service.FirefoxDriverService;
-
 public class Main {
 
     public static void main(String[] args) {
-        DriverService chromeService = new ChromeDriverService();
+        DeveloperFactory developerFactory = new DeveloperFactory();
 
-        chromeService.printConfiguration();
+        Developer developer = developerFactory.defineDeveloper(CodeType.JAVA);
 
-        DriverService firefoxService = new FirefoxDriverService();
-
-        firefoxService.printConfiguration();
+        developer.writeCode();
     }
 }

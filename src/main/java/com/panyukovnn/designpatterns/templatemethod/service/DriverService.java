@@ -1,6 +1,6 @@
-package com.panyukovnn.designpatterns.factorymethod.service;
+package com.panyukovnn.designpatterns.templatemethod.service;
 
-import com.panyukovnn.designpatterns.factorymethod.model.Driver;
+import com.panyukovnn.designpatterns.templatemethod.model.Driver;
 
 public abstract class DriverService {
 

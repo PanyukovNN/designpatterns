@@ -1,6 +1,5 @@
 package com.panyukovnn.designpatterns.prototype.service;
 
-import com.panyukovnn.designpatterns.prototype.model.ClonableGame;
 import com.panyukovnn.designpatterns.prototype.model.FootballGame;
 
 public class FootballGameFactory {
