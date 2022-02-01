@@ -1,4 +1,4 @@
-package com.panyukovnn.designpatterns.classic.decorator.service;
+package com.panyukovnn.designpatterns.spring.decorator.service;
 
 public interface LoadingService {
     void loadOneVideo(String videoId);

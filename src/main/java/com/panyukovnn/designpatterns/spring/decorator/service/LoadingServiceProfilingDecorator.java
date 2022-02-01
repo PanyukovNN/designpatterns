@@ -1,9 +1,12 @@
-package com.panyukovnn.designpatterns.classic.decorator.service;
+package com.panyukovnn.designpatterns.spring.decorator.service;
 
-public class ProfilingDecorator extends LoadingServiceDecorator {
+import org.springframework.stereotype.Service;
 
-    public ProfilingDecorator(LoadingService source) {
-        super(source);
+@Service
+public class LoadingServiceProfilingDecorator extends LoadingServiceDecorator {
+
+    public LoadingServiceProfilingDecorator(LoadingService loadingService) {
+        super(loadingService);
     }
 
     @Override

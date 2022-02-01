@@ -20,6 +20,7 @@ public class Publication {
     }
 
     public static class Builder {
+
         private String id;
         private String text;
         private LocalDateTime takenAt;
@@ -49,6 +50,10 @@ public class Publication {
             Objects.requireNonNull(id, "Publication id can't be null.");
             Objects.requireNonNull(text, "Publication text can't be null.");
             Objects.requireNonNull(media, "Publication media can't be null.");
+
+            if (text != null && media == null) {
+                throw new IllegalArgumentException();
+            }
 
             return new Publication(id, text, takenAt, media);
         }

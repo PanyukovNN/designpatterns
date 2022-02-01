@@ -1,9 +1,12 @@
-package com.panyukovnn.designpatterns.classic.decorator.service;
+package com.panyukovnn.designpatterns.spring.decorator.service;
 
-public class LoggingDecorator extends LoadingServiceDecorator {
+import org.springframework.stereotype.Service;
 
-    public LoggingDecorator(LoadingService source) {
-        super(source);
+@Service
+public class LoadingServiceLoggingDecorator extends LoadingServiceDecorator {
+
+    public LoadingServiceLoggingDecorator(LoadingService loadingService) {
+        super(loadingService);
     }
 
     @Override
@@ -19,4 +22,6 @@ public class LoggingDecorator extends LoadingServiceDecorator {
         super.loadAllVideos();
         System.out.println("All videos loading finished.");
     }
+
+
 }

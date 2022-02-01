@@ -1,5 +1,8 @@
 package com.panyukovnn.designpatterns.classic.factorymethod;
 
+
+
+
 public class DeveloperFactory {
 
     public Developer defineDeveloper(CodeType codeType) {

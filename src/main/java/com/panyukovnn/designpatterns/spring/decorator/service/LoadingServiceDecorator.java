@@ -1,11 +1,11 @@
-package com.panyukovnn.designpatterns.classic.decorator.service;
+package com.panyukovnn.designpatterns.spring.decorator.service;
 
 public class LoadingServiceDecorator implements LoadingService {
 
     private final LoadingService wrappee;
 
-    public LoadingServiceDecorator(LoadingService source) {
-        this.wrappee = source;
+    public LoadingServiceDecorator(LoadingService loadingService) {
+        this.wrappee = loadingService;
     }
 
     @Override
